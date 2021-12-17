@@ -1,3 +1,36 @@
+/* main */
+.wrapper{  
+  display: grid;
+
+}
+
+
+.card{
+  max-width: 60vw;
+  margin: 37px auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.cards{
+  display: flex; 
+  overflow: hidden;
+}
+
+.card-item{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.card h2{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+
+
+
 /* footer */
 footer{
     background-color: black;
