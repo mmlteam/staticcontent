@@ -1,0 +1,30 @@
+header {
+    /* border: 3px solid red; */
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.container{
+    height: 7vh;
+    background-color: black;
+}
+.container img{
+
+    height: 40px;
+}
+.container ul {
+    color: white;
+    display: flex;
+    list-style: none;  
+    float: right;  
+    margin-right: 50px;
+    /* padding: 12px 10px; */
+    margin:  10px 0px;
+}
+.container ul li{
+    
+    padding: 2px 10px;
+
+}
