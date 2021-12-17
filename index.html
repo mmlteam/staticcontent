@@ -9,25 +9,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  
   <title>static content</title>
 </head>
 
 <body>
 
   <header>
-    <div class="container">
-      <img src="./css/mobile-app-2.png">
-      <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Contact us</li>
-      </ul>
-    </div>
-  </header>
+    <nav>
+        <div class="logo"><img src="./css/mobile-app-2.png"></div>
+        <div class="openMenu">≡</div>
+        <ul class="mainMenu">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Contact</a></li>
+                <li> <a href="#">About us</a></li>
+            <div class="closeMenu">X</div>
+            
+        </ul>
+    </nav>
+
+</header>
 
   <section>
-    <h2 class="w3-center">Manual Slideshow</h2>
+    <!-- <h2 class="w3-center">Manual Slideshow</h2> -->
     <div class="w3-content">
       <img class="mySlides" src="./css/img_snowtops.jpg" style="width:100%">
       <img class="mySlides" src="./css/img_lights.jpg" style="width:100%">
@@ -150,6 +155,7 @@
     </div>
   </footer>
 </body>
+<script src="./style.js"></script>
 <script>
   var slideIndex = 1;
   showDivs(slideIndex);
