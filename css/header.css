@@ -1,7 +1,9 @@
 header {
     /* border: 3px solid red; */
-    height: 10vh;
-    color:white;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+
 }
 
 .container{
