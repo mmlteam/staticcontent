@@ -43,7 +43,13 @@
     max-width: 1000px;
 
 }
+.second-img img{
+    margin: 20px 15px;
+    height: 20vh;
+}
+
 .second-img{
-        display: block;
-    margin: 20px 22%;
+
+        position: relative;
+    left: 25%;
 }
