@@ -1,29 +1,43 @@
-header{
- background-color: black;
- 
 
+nav{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
-.container{
-    width: 1280px;
-    height: 7vh;
-    margin: 0px auto;
-    background-color: black;
-}
-.container img{
-
-    height: 40px;
-}
-.container ul {
-    color: white;
+nav .mainMenu {
     display: flex;
     list-style: none;
-    float: right;
-    margin: 5px 49px;
 }
-.container ul li{
-    
-    padding: 2px 10px;
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover {
+    background: rgb(214, 135, 31);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
 
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 100px;
+    padding: 15px 0px;
+    align-items: center;
 }
 
 .mySlides {
@@ -33,10 +47,59 @@ height: 50vh;
 
     text-align: center!important;
     position: relative;
-    display: grid;
+    /* display: grid; */
     height: 10% auto;
 }
 
+@media screen and (max-width: 1240px){
+    .container{
+      width: auto;
+      height: auto;
+
+  }
+  .cards{
+
+    display: block;
+  }
+  .lines p {
+
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px){
+    nav{
+        display: flex;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 2rem;
+    }
+
+}
 
 
 
