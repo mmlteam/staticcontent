@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    line-height: unset;
+}
+
+.img-box{
+    /* background-image: url(./img_lights.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: 600px;
+    width: 100%;
+}
+.img-box img{
+    height: 50vh;
+}
+.space{}
